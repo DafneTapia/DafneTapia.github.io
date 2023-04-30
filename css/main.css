@@ -1,0 +1,212 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/************************************************************************/
+/*   HEADER   */
+
+/*Navegacion*/
+header{
+    /*width es ancho y height es alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    /*justifica todo hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*elimina puntitos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgb(21, 21, 21);
+}
+
+/*Icono de menu*/
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+
+/*Icono de mi foto*/
+nav .nav-right-section .foto{
+    background-image: url(/imagenes/yop.jpeg);
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    border-radius: 60px;
+}
+
+/************************************************************************/
+/*   MAIN   */
+
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Sección logo*/
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+/*Logo google*/
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+/*Sección input*/
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 1px 3px 1px  #20212447;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png");
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px; 
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png");
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(/imagenes/lens.png);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 15px;
+}
+
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+/*Sección botones apariencia*/
+main .main-buttons button{
+    border:none;
+    
+    height: 36px;
+    /*Fondo de los botones*/
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de las letras antes de hover*/
+    color: #3c4043;
+    /*Redondeamos botones*/
+    border-radius: 4px;
+    padding: 0 15px;
+    /*Margem entre botones*/
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    /*Cambia borde al hacer hover*/
+    border: 1px solid #dadce0;
+    /*Cambia color letras (muy leve) al hacer hover*/
+    color: #202124; 
+}
+
+/************************************************************************/
+/*   FOOTER   */
+footer{
+    /*width es ancho y height es alto */
+    width: 100%;
+    height: 50px;
+    background-color: #f2f2f2;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* Posiciona el footer al final*/
+    bottom:0;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+}
